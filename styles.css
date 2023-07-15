@@ -5,6 +5,12 @@ body {
   padding: 20px;
 }
 
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
   display: flex;
   align-items: center;
@@ -14,10 +20,15 @@ body {
   padding: 10px;
   margin-bottom: 10px;
   transition: transform 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  min-width: 250px;
+  gap: 10px;
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ff5722;
 }
 
 .icon {
