@@ -49,7 +49,7 @@ async function handlePaginationClick(event) {
 
   if (!isNaN(pageNumber)) {
     currentPage = pageNumber;
-    renderPage(currentPage, data);
+    renderPage(currentPage, filteredData);
 
     // Remove 'active' class from all pagination buttons
     const paginationButtons = document.querySelectorAll(
