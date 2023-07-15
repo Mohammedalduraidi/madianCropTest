@@ -4,7 +4,6 @@ async function fetchData() {
       "http://filltext.com/?rows=50&fname={firstName}&Iname={lastName}&category=[%22cat1%22,%22cat2%22,%22cat3%22]&pretty=true"
     );
     const data = await response.json();
-    console.log({ data });
     return data;
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -103,7 +102,6 @@ function renderFilterTabs() {
 
 async function handleFilterTabClick(event) {
   const selectedCategory = event.target.getAttribute("data-category");
-  console.log({ selectedCategory, currentFilter });
 
   if (selectedCategory && selectedCategory !== currentFilter) {
     currentFilter = selectedCategory;
