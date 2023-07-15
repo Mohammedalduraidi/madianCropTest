@@ -25,7 +25,7 @@ async function renderCards(items) {
     .map(
       (item) => `
         <div class="card">
-          <i class="icon"></i>
+          <i class="icon">${item?.fname[0] ?? ""}${item?.Iname[0] ?? ""}</i>
           <div class="name">${item.fname} ${item.Iname}</div>
           <div class="category">${item.category}</div>
         </div>
